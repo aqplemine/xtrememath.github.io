@@ -1,11 +1,11 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-    <title>XTremeMath Games!</title>
+    <title>Epic Games</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #2e3244 0%, #36224b 100%);
+            background: linear-gradient(0deg, #a84f49 0%, #a84f49 0%);
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -168,30 +168,30 @@
     <div class="sidebar" id="sidebar">
     </div>
 
-    <!-- Main Content
+    <!-- Main Content -->
     <div class="main-content">
-        <h1>UGS Files</h1>
+        <h1>Epic Games!</h1>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
-    Files from 
-    <a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/" 
+    -Future use soon-
+    <a href="https://google.com" 
         target="_blank" 
         style="display: inline; color: #79aadb; text-decoration: none; font-size: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        Ultimate Game Stash Google Doc
+        N/A
     </a>
     </h2>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
-    Discord Server:
-    <a href="https://discord.gg/rmVsAqkpkA" 
+    -Future use soon-
+    <a href="https://google.com" 
         target="_blank" 
         style="display: inline; color: #79aadb; text-decoration: none; font-size: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        https://discord.gg/rmVsAqkpkA
+        N/A
     </a>
     </h2>
 
         
         <div id="sections-container">
         </div>
-    </div>-->
+    </div>
 
     <script>
 const files = [
