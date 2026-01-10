@@ -290,11 +290,11 @@ function login() {
     <div class="main-content">
         <h1>Epic Games!</h1>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
-    -Future use soon-
-    <a href="https://google.com" 
+    Return fo the main website:
+    <a href="https://aqplemine.github.io/mathproblems.github.io/" 
         target="_blank" 
         style="display: inline; color: #79aadb; text-decoration: none; font-size: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        N/A
+        Here!
     </a>
     </h2>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
