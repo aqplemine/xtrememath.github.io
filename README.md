@@ -13,31 +13,107 @@
 <html>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login Overlay</title>
+
+<style>
+/* ===== LOGIN OVERLAY STYLE ===== */
+#loginOverlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #0f0f1a, #1b1b2f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    font-family: Arial, sans-serif;
+}
+
+#loginBox {
+    background: #121225;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+#loginBox h2 {
+    margin-bottom: 20px;
+}
+
+#loginBox input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+#loginBox button {
+    margin-top: 10px;
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+}
+
+#loginBox button:hover {
+    background: #6366f1;
+}
+
+#errorMsg {
+    color: #ff4d4d;
+    margin-top: 10px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== LOGIN OVERLAY ===== -->
+<div id="loginOverlay">
+    <div id="loginBox">
+        <h2>Login</h2>
+        <input id="user" placeholder="Username">
+        <input id="pass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        Why do you need a login? We have premium math problems, and you got your account from our premium website.
+        <div id="errorMsg"></div>
+    </div>
+</div>
+
 <script>
-  // 1. Define your users and passwords here
-  const users = {
-    "admin": "admin12345",
-    "guest": "guest1",
-    "mathpro": "algebra2026isgood"
-  };
+/* ===== SET YOUR ACCOUNTS HERE ===== */
+const accounts = {
+    admin: "admin12345",
+    guest: "guest1",
+    user: "mypassword",
+    games: "realgamesin2026",
+};
 
-  alert("Note, you are accessing our premium math problems, so it requires a login.");
+function login() {
+    const u = document.getElementById("user").value;
+    const p = document.getElementById("pass").value;
 
-  if (confirm("Would you like to sign in, or leave our website?")) {
-    let userEntry = prompt("Please enter your Username:");
-    let passEntry = prompt("Please enter your Password:");
-
-    // 2. Check if the username exists AND if the password matches
-    if (users[userEntry] && users[userEntry] === passEntry) {
-      alert("Access Granted! Welcome, " + userEntry + ".");
+    if (accounts[u] && accounts[u] === p) {
+        document.getElementById("loginOverlay").style.display = "none";
     } else {
-      alert("Invalid login credentials.");
-      window.location.href = "https://www.google.com/Access_Denied";
+        document.getElementById("errorMsg").innerText = "Invalid login.";
     }
-  } else {
-    window.location.href = "https://www.google.com/Access_Denied";
-  }
+}
 </script>
+
 
 </script>
 
