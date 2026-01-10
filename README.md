@@ -1,3 +1,46 @@
+<!--
+  REAL_ALGEBRA_MATH_PROBLEMS: index
+  Description: REAL MATH GAMES NOT FAKE :D
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PREMIUM | Algebra Math Problems</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Your HTML Here -->
+<html>
+<body>
+
+<script>
+  // 1. Define your users and passwords here
+  const users = {
+    "admin": "admin12345",
+    "guest": "guest1",
+    "mathpro": "algebra2026isgood"
+  };
+
+  alert("Note, you are accessing our premium math problems, so it requires a login.");
+
+  if (confirm("Would you like to sign in, or leave our website?")) {
+    let userEntry = prompt("Please enter your Username:");
+    let passEntry = prompt("Please enter your Password:");
+
+    // 2. Check if the username exists AND if the password matches
+    if (users[userEntry] && users[userEntry] === passEntry) {
+      alert("Access Granted! Welcome, " + userEntry + ".");
+    } else {
+      alert("Invalid login credentials.");
+      window.location.href = "https://www.google.com/Access_Denied";
+    }
+  } else {
+    window.location.href = "https://www.google.com/Access_Denied";
+  }
+</script>
+
+</script>
+
 <html>
 <head>
     <title>Epic Games</title>
